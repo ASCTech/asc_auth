@@ -1,7 +1,7 @@
 name = ASC Authentication
 description = Shibboleth authentication for ASC Sites.
 core = 7.x
-package = asc_auth
+package = ASC
 version = 7.x-1.0-dev
 project = asc_auth
 dependencies[] = shib_auth
