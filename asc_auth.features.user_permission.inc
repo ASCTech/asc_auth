@@ -275,11 +275,30 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: administer social media.
+  $permissions['administer social media'] = array(
+    'name' => 'administer social media',
+    'roles' => array(
+      0 => 'Content Editor',
+    ),
+    'module' => 'socialmedia',
+  );
+
   // Exported permission: administer software updates.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(),
     'module' => 'system',
+  );
+
+  // Exported permission: administer taxonomy.
+  $permissions['administer taxonomy'] = array(
+    'name' => 'administer taxonomy',
+    'roles' => array(
+      0 => 'Content Manager',
+      1 => 'Site Administrator',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: administer themes.
@@ -308,6 +327,13 @@ function asc_auth_user_default_permissions() {
       0 => 'Site Administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: administer uuid.
+  $permissions['administer uuid'] = array(
+    'name' => 'administer uuid',
+    'roles' => array(),
+    'module' => 'uuid',
   );
 
   // Exported permission: administer views.
@@ -517,7 +543,11 @@ function asc_auth_user_default_permissions() {
   // Exported permission: use admin toolbar.
   $permissions['use admin toolbar'] = array(
     'name' => 'use admin toolbar',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+    ),
     'module' => 'admin',
   );
 
@@ -609,7 +639,9 @@ function asc_auth_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      0 => 'Site Administrator',
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
     ),
     'module' => 'system',
   );

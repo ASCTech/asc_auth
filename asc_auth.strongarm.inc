@@ -42,7 +42,7 @@ function asc_auth_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
-  $strongarm->value = '3';
+  $strongarm->value = '5';
   $export['user_admin_role'] = $strongarm;
 
   $strongarm = new stdClass();
