@@ -216,13 +216,6 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer pathauto.
-  $permissions['administer pathauto'] = array(
-    'name' => 'administer pathauto',
-    'roles' => array(),
-    'module' => 'pathauto',
-  );
-
   // Exported permission: administer permissions.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
@@ -310,16 +303,6 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer url aliases.
-  $permissions['administer url aliases'] = array(
-    'name' => 'administer url aliases',
-    'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
-    ),
-    'module' => 'path',
-  );
-
   // Exported permission: administer users.
   $permissions['administer users'] = array(
     'name' => 'administer users',
@@ -373,17 +356,6 @@ function asc_auth_user_default_permissions() {
       0 => 'Site Administrator',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: create url aliases.
-  $permissions['create url aliases'] = array(
-    'name' => 'create url aliases',
-    'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
-    ),
-    'module' => 'path',
   );
 
   // Exported permission: customize shortcut links.
@@ -472,13 +444,6 @@ function asc_auth_user_default_permissions() {
       0 => 'Site Administrator',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: notify of path changes.
-  $permissions['notify of path changes'] = array(
-    'name' => 'notify of path changes',
-    'roles' => array(),
-    'module' => 'pathauto',
   );
 
   // Exported permission: revert revisions.
