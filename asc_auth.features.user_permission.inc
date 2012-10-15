@@ -157,7 +157,9 @@ function asc_auth_user_default_permissions() {
   // Exported permission: administer custom breadcrumbs.
   $permissions['administer custom breadcrumbs'] = array(
     'name' => 'administer custom breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Site Administrator',
+    ),
     'module' => 'custom_breadcrumbs',
   );
 
@@ -214,6 +216,13 @@ function asc_auth_user_default_permissions() {
       0 => 'Site Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer pathauto.
+  $permissions['administer pathauto'] = array(
+    'name' => 'administer pathauto',
+    'roles' => array(),
+    'module' => 'pathauto',
   );
 
   // Exported permission: administer permissions.
@@ -288,8 +297,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      0 => 'Site Administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -301,6 +309,15 @@ function asc_auth_user_default_permissions() {
       0 => 'Site Administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer url aliases.
+  $permissions['administer url aliases'] = array(
+    'name' => 'administer url aliases',
+    'roles' => array(
+      0 => 'Site Administrator',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: administer users.
@@ -356,6 +373,16 @@ function asc_auth_user_default_permissions() {
       0 => 'Site Administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: create url aliases.
+  $permissions['create url aliases'] = array(
+    'name' => 'create url aliases',
+    'roles' => array(
+      0 => 'Content Manager',
+      1 => 'Site Administrator',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: customize shortcut links.
@@ -414,6 +441,7 @@ function asc_auth_user_default_permissions() {
     'name' => 'grant content access',
     'roles' => array(
       0 => 'Site Administrator',
+      1 => 'Webform Manager',
     ),
     'module' => 'content_access',
   );
@@ -444,6 +472,13 @@ function asc_auth_user_default_permissions() {
       0 => 'Site Administrator',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: notify of path changes.
+  $permissions['notify of path changes'] = array(
+    'name' => 'notify of path changes',
+    'roles' => array(),
+    'module' => 'pathauto',
   );
 
   // Exported permission: revert revisions.
@@ -529,17 +564,10 @@ function asc_auth_user_default_permissions() {
   // Exported permission: use php in custom breadcrumbs.
   $permissions['use php in custom breadcrumbs'] = array(
     'name' => 'use php in custom breadcrumbs',
-    'roles' => array(),
-    'module' => 'custom_breadcrumbs',
-  );
-
-  // Exported permission: use text format ds_code.
-  $permissions['use text format ds_code'] = array(
-    'name' => 'use text format ds_code',
     'roles' => array(
       0 => 'Site Administrator',
     ),
-    'module' => 'filter',
+    'module' => 'custom_breadcrumbs',
   );
 
   // Exported permission: use text format html.
