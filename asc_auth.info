@@ -15,6 +15,7 @@ dependencies[] = ds
 dependencies[] = features
 dependencies[] = lightbox2
 dependencies[] = location
+dependencies[] = masquerade
 dependencies[] = media
 dependencies[] = menu
 dependencies[] = node_export
