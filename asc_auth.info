@@ -25,7 +25,6 @@ dependencies[] = search
 dependencies[] = shib_auth
 dependencies[] = shib_provision
 dependencies[] = shortcut
-dependencies[] = socialmedia
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = uuid
