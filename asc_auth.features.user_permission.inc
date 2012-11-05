@@ -277,15 +277,6 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer social media.
-  $permissions['administer social media'] = array(
-    'name' => 'administer social media',
-    'roles' => array(
-      0 => 'Content Editor',
-    ),
-    'module' => 'socialmedia',
-  );
-
   // Exported permission: administer software updates.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
