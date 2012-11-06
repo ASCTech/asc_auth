@@ -560,7 +560,7 @@ function asc_auth_user_default_permissions() {
     ),
     'module' => 'custom_breadcrumbs',
   );
-
+/*
   // Exported permission: use text format html.
   $permissions['use text format html'] = array(
     'name' => 'use text format html',
@@ -578,6 +578,7 @@ function asc_auth_user_default_permissions() {
     'roles' => array(),
     'module' => 'filter',
   );
+ */
 
   // Exported permission: view location directory.
   $permissions['view location directory'] = array(
