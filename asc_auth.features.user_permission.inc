@@ -345,7 +345,6 @@ function asc_auth_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
-      0 => 'Site Administrator',
     ),
     'module' => 'node',
   );
