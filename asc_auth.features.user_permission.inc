@@ -154,15 +154,6 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer custom breadcrumbs.
-  $permissions['administer custom breadcrumbs'] = array(
-    'name' => 'administer custom breadcrumbs',
-    'roles' => array(
-      0 => 'Site Administrator',
-    ),
-    'module' => 'custom_breadcrumbs',
-  );
-
   // Exported permission: administer features.
   $permissions['administer features'] = array(
     'name' => 'administer features',
@@ -551,14 +542,6 @@ function asc_auth_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: use php in custom breadcrumbs.
-  $permissions['use php in custom breadcrumbs'] = array(
-    'name' => 'use php in custom breadcrumbs',
-    'roles' => array(
-      0 => 'Site Administrator',
-    ),
-    'module' => 'custom_breadcrumbs',
-  );
 /*
   // Exported permission: use text format html.
   $permissions['use text format html'] = array(
