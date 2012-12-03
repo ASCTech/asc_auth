@@ -6,6 +6,7 @@ php = 5.2.4
 version = 7.x-1.0-dev
 project = asc_auth
 dependencies[] = admin
+dependencies[] = asc_login_override
 dependencies[] = block
 dependencies[] = captcha
 dependencies[] = content_access
