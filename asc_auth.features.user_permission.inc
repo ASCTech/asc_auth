@@ -417,26 +417,6 @@ function asc_auth_user_default_permissions() {
     'module' => 'node_export',
   );
 
-  // Exported permission: grant content access.
-  $permissions['grant content access'] = array(
-    'name' => 'grant content access',
-    'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
-    ),
-    'module' => 'content_access',
-  );
-
-  // Exported permission: grant own content access.
-  $permissions['grant own content access'] = array(
-    'name' => 'grant own content access',
-    'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
-    ),
-    'module' => 'content_access',
-  );
-
   // Exported permission: import media.
   $permissions['import media'] = array(
     'name' => 'import media',
