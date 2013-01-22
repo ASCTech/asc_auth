@@ -522,26 +522,6 @@ function asc_auth_user_default_permissions() {
     'module' => 'search',
   );
 
-/*
-  // Exported permission: use text format html.
-  $permissions['use text format html'] = array(
-    'name' => 'use text format html',
-    'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
-    ),
-    'module' => 'filter',
-  );
-
-  // Exported permission: use text format markdown.
-  $permissions['use text format markdown'] = array(
-    'name' => 'use text format markdown',
-    'roles' => array(),
-    'module' => 'filter',
-  );
- */
-
   // Exported permission: view location directory.
   $permissions['view location directory'] = array(
     'name' => 'view location directory',
