@@ -9,6 +9,7 @@ dependencies[] = admin
 dependencies[] = asc_login_override
 dependencies[] = block
 dependencies[] = captcha
+dependencies[] = content_access
 dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = ds
