@@ -14,8 +14,8 @@ function asc_auth_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'system',
   );
@@ -24,7 +24,7 @@ function asc_auth_user_default_permissions() {
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'views',
   );
@@ -33,8 +33,8 @@ function asc_auth_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -43,9 +43,9 @@ function asc_auth_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -54,9 +54,9 @@ function asc_auth_user_default_permissions() {
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'contextual',
   );
@@ -65,9 +65,9 @@ function asc_auth_user_default_permissions() {
   $permissions['access piwik reports'] = array(
     'name' => 'access piwik reports',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'piwik_reports',
   );
@@ -76,9 +76,9 @@ function asc_auth_user_default_permissions() {
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'system',
   );
@@ -94,7 +94,7 @@ function asc_auth_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'user',
   );
@@ -102,20 +102,6 @@ function asc_auth_user_default_permissions() {
   // Exported permission: admin_display_suite.
   $permissions['admin_display_suite'] = array(
     'name' => 'admin_display_suite',
-    'roles' => array(),
-    'module' => 'ds',
-  );
-
-  // Exported permission: admin_fields.
-  $permissions['admin_fields'] = array(
-    'name' => 'admin_fields',
-    'roles' => array(),
-    'module' => 'ds',
-  );
-
-  // Exported permission: admin_view_modes.
-  $permissions['admin_view_modes'] = array(
-    'name' => 'admin_view_modes',
     'roles' => array(),
     'module' => 'ds',
   );
@@ -131,9 +117,9 @@ function asc_auth_user_default_permissions() {
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'system',
   );
@@ -142,15 +128,27 @@ function asc_auth_user_default_permissions() {
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'block',
+  );
+
+  // Exported permission: administer content.
+  $permissions['administer content'] = array(
+    'name' => 'administer content',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
-    'roles' => array(),
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+    ),
     'module' => 'node',
   );
 
@@ -186,7 +184,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'menu',
   );
@@ -195,7 +193,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'system',
   );
@@ -204,7 +202,8 @@ function asc_auth_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -220,7 +219,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'user',
   );
@@ -229,7 +228,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer piwik reports'] = array(
     'name' => 'administer piwik reports',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'piwik_reports',
   );
@@ -238,7 +237,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer search'] = array(
     'name' => 'administer search',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'search',
   );
@@ -254,7 +253,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer shortcuts'] = array(
     'name' => 'administer shortcuts',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'shortcut',
   );
@@ -263,7 +262,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'system',
   );
@@ -279,7 +278,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -288,7 +287,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'system',
   );
@@ -297,7 +296,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'path',
   );
@@ -306,7 +305,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'user',
   );
@@ -335,8 +334,7 @@ function asc_auth_user_default_permissions() {
   // Exported permission: bypass node access.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
-    'roles' => array(
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -351,7 +349,7 @@ function asc_auth_user_default_permissions() {
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'user',
   );
@@ -360,8 +358,8 @@ function asc_auth_user_default_permissions() {
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'path',
   );
@@ -370,7 +368,7 @@ function asc_auth_user_default_permissions() {
   $permissions['customize shortcut links'] = array(
     'name' => 'customize shortcut links',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'shortcut',
   );
@@ -379,8 +377,8 @@ function asc_auth_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -389,9 +387,9 @@ function asc_auth_user_default_permissions() {
   $permissions['download original image'] = array(
     'name' => 'download original image',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'lightbox2',
   );
@@ -400,8 +398,8 @@ function asc_auth_user_default_permissions() {
   $permissions['export nodes'] = array(
     'name' => 'export nodes',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node_export',
   );
@@ -410,38 +408,18 @@ function asc_auth_user_default_permissions() {
   $permissions['export own nodes'] = array(
     'name' => 'export own nodes',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node_export',
-  );
-
-  // Exported permission: grant content access.
-  $permissions['grant content access'] = array(
-    'name' => 'grant content access',
-    'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
-    ),
-    'module' => 'content_access',
-  );
-
-  // Exported permission: grant own content access.
-  $permissions['grant own content access'] = array(
-    'name' => 'grant own content access',
-    'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
-    ),
-    'module' => 'content_access',
   );
 
   // Exported permission: import media.
   $permissions['import media'] = array(
     'name' => 'import media',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'media',
   );
@@ -450,7 +428,7 @@ function asc_auth_user_default_permissions() {
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'features',
   );
@@ -466,8 +444,8 @@ function asc_auth_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -476,8 +454,8 @@ function asc_auth_user_default_permissions() {
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'anonymous user',
+      'Site Administrator' => 'Site Administrator',
+      'anonymous user' => 'anonymous user',
     ),
     'module' => 'search',
   );
@@ -500,7 +478,7 @@ function asc_auth_user_default_permissions() {
   $permissions['submit latitude/longitude'] = array(
     'name' => 'submit latitude/longitude',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'location',
   );
@@ -509,7 +487,7 @@ function asc_auth_user_default_permissions() {
   $permissions['switch shortcut sets'] = array(
     'name' => 'switch shortcut sets',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'shortcut',
   );
@@ -525,9 +503,9 @@ function asc_auth_user_default_permissions() {
   $permissions['use admin toolbar'] = array(
     'name' => 'use admin toolbar',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'admin',
   );
@@ -536,37 +514,17 @@ function asc_auth_user_default_permissions() {
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'anonymous user',
+      'Site Administrator' => 'Site Administrator',
+      'anonymous user' => 'anonymous user',
     ),
     'module' => 'search',
   );
-
-/*
-  // Exported permission: use text format html.
-  $permissions['use text format html'] = array(
-    'name' => 'use text format html',
-    'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
-    ),
-    'module' => 'filter',
-  );
-
-  // Exported permission: use text format markdown.
-  $permissions['use text format markdown'] = array(
-    'name' => 'use text format markdown',
-    'roles' => array(),
-    'module' => 'filter',
-  );
- */
 
   // Exported permission: view location directory.
   $permissions['view location directory'] = array(
     'name' => 'view location directory',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'location',
   );
@@ -575,7 +533,7 @@ function asc_auth_user_default_permissions() {
   $permissions['view node location table'] = array(
     'name' => 'view node location table',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'location',
   );
@@ -584,9 +542,9 @@ function asc_auth_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -595,9 +553,9 @@ function asc_auth_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -606,9 +564,9 @@ function asc_auth_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'system',
   );
@@ -617,7 +575,7 @@ function asc_auth_user_default_permissions() {
   $permissions['view user location table'] = array(
     'name' => 'view user location table',
     'roles' => array(
-      0 => 'Site Administrator',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'location',
   );
