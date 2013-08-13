@@ -172,6 +172,7 @@ function asc_auth_user_default_permissions() {
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'menu',
@@ -190,7 +191,6 @@ function asc_auth_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
-      'Content Manager' => 'Content Manager',
       'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
@@ -506,117 +506,6 @@ function asc_auth_user_default_permissions() {
       'anonymous user' => 'anonymous user',
     ),
     'module' => 'search',
-  );
-
-  // Exported permission: view any unpublished asc_blog content.
-  $permissions['view any unpublished asc_blog content'] = array(
-    'name' => 'view any unpublished asc_blog content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished asc_event content.
-  $permissions['view any unpublished asc_event content'] = array(
-    'name' => 'view any unpublished asc_event content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished asc_news content.
-  $permissions['view any unpublished asc_news content'] = array(
-    'name' => 'view any unpublished asc_news content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished asc_people content.
-  $permissions['view any unpublished asc_people content'] = array(
-    'name' => 'view any unpublished asc_people content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished content.
-  $permissions['view any unpublished content'] = array(
-    'name' => 'view any unpublished content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished front_page content.
-  $permissions['view any unpublished front_page content'] = array(
-    'name' => 'view any unpublished front_page content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished landing_page_alpha content.
-  $permissions['view any unpublished landing_page_alpha content'] = array(
-    'name' => 'view any unpublished landing_page_alpha content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished microsite_page content.
-  $permissions['view any unpublished microsite_page content'] = array(
-    'name' => 'view any unpublished microsite_page content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished page content.
-  $permissions['view any unpublished page content'] = array(
-    'name' => 'view any unpublished page content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: view any unpublished webform content.
-  $permissions['view any unpublished webform content'] = array(
-    'name' => 'view any unpublished webform content',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-      'Webform Manager' => 'Webform Manager',
-    ),
-    'module' => 'view_unpublished',
   );
 
   // Exported permission: view location directory.
