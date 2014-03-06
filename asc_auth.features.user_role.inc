@@ -13,19 +13,19 @@ function asc_auth_user_default_roles() {
   // Exported role: Content Editor.
   $roles['Content Editor'] = array(
     'name' => 'Content Editor',
-    'weight' => '2',
+    'weight' => 2,
   );
 
   // Exported role: Content Manager.
   $roles['Content Manager'] = array(
     'name' => 'Content Manager',
-    'weight' => '3',
+    'weight' => 3,
   );
 
   // Exported role: Site Administrator.
   $roles['Site Administrator'] = array(
     'name' => 'Site Administrator',
-    'weight' => '4',
+    'weight' => 4,
   );
 
   return $roles;

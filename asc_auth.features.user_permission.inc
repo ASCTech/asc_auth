@@ -10,7 +10,7 @@
 function asc_auth_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration pages.
+  // Exported permission: 'access administration pages'.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
@@ -20,7 +20,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access all views.
+  // Exported permission: 'access all views'.
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
@@ -29,7 +29,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: access content.
+  // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
@@ -39,7 +39,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: access content overview.
+  // Exported permission: 'access content overview'.
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
@@ -50,7 +50,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: access contextual links.
+  // Exported permission: 'access contextual links'.
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
@@ -61,7 +61,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: access piwik reports.
+  // Exported permission: 'access piwik reports'.
   $permissions['access piwik reports'] = array(
     'name' => 'access piwik reports',
     'roles' => array(
@@ -72,7 +72,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'piwik_reports',
   );
 
-  // Exported permission: access site in maintenance mode.
+  // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
@@ -83,14 +83,17 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access site reports.
+  // Exported permission: 'access site reports'.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
+    ),
     'module' => 'system',
   );
 
-  // Exported permission: access user profiles.
+  // Exported permission: 'access user profiles'.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
@@ -99,21 +102,21 @@ function asc_auth_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: admin_display_suite.
+  // Exported permission: 'admin_display_suite'.
   $permissions['admin_display_suite'] = array(
     'name' => 'admin_display_suite',
     'roles' => array(),
     'module' => 'ds',
   );
 
-  // Exported permission: administer CAPTCHA settings.
+  // Exported permission: 'administer CAPTCHA settings'.
   $permissions['administer CAPTCHA settings'] = array(
     'name' => 'administer CAPTCHA settings',
     'roles' => array(),
     'module' => 'captcha',
   );
 
-  // Exported permission: administer actions.
+  // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(
@@ -124,7 +127,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer blocks.
+  // Exported permission: 'administer blocks'.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
@@ -133,42 +136,42 @@ function asc_auth_user_default_permissions() {
     'module' => 'block',
   );
 
-  // Exported permission: administer content types.
+  // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: administer features.
+  // Exported permission: 'administer features'.
   $permissions['administer features'] = array(
     'name' => 'administer features',
     'roles' => array(),
     'module' => 'features',
   );
 
-  // Exported permission: administer filters.
+  // Exported permission: 'administer filters'.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
     'roles' => array(),
     'module' => 'filter',
   );
 
-  // Exported permission: administer image styles.
+  // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(),
     'module' => 'image',
   );
 
-  // Exported permission: administer lightbox2.
+  // Exported permission: 'administer lightbox2'.
   $permissions['administer lightbox2'] = array(
     'name' => 'administer lightbox2',
     'roles' => array(),
     'module' => 'lightbox2',
   );
 
-  // Exported permission: administer menu.
+  // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
@@ -178,7 +181,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'menu',
   );
 
-  // Exported permission: administer modules.
+  // Exported permission: 'administer modules'.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(
@@ -187,7 +190,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer nodes.
+  // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
@@ -196,14 +199,14 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer pathauto.
+  // Exported permission: 'administer pathauto'.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
     'roles' => array(),
     'module' => 'pathauto',
   );
 
-  // Exported permission: administer permissions.
+  // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
@@ -212,7 +215,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer piwik reports.
+  // Exported permission: 'administer piwik reports'.
   $permissions['administer piwik reports'] = array(
     'name' => 'administer piwik reports',
     'roles' => array(
@@ -221,7 +224,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'piwik_reports',
   );
 
-  // Exported permission: administer search.
+  // Exported permission: 'administer search'.
   $permissions['administer search'] = array(
     'name' => 'administer search',
     'roles' => array(
@@ -230,14 +233,14 @@ function asc_auth_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: administer shibboleth authentication.
+  // Exported permission: 'administer shibboleth authentication'.
   $permissions['administer shibboleth authentication'] = array(
     'name' => 'administer shibboleth authentication',
     'roles' => array(),
     'module' => 'shib_auth',
   );
 
-  // Exported permission: administer shortcuts.
+  // Exported permission: 'administer shortcuts'.
   $permissions['administer shortcuts'] = array(
     'name' => 'administer shortcuts',
     'roles' => array(
@@ -246,7 +249,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: administer site configuration.
+  // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
@@ -255,14 +258,14 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer software updates.
+  // Exported permission: 'administer software updates'.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: administer taxonomy.
+  // Exported permission: 'administer taxonomy'.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
@@ -271,7 +274,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: administer themes.
+  // Exported permission: 'administer themes'.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(
@@ -280,7 +283,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer url aliases.
+  // Exported permission: 'administer url aliases'.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
@@ -289,7 +292,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: administer users.
+  // Exported permission: 'administer users'.
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
@@ -298,42 +301,44 @@ function asc_auth_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer uuid.
+  // Exported permission: 'administer uuid'.
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(),
     'module' => 'uuid',
   );
 
-  // Exported permission: administer views.
+  // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
-    'roles' => array(),
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+    ),
     'module' => 'views',
   );
 
-  // Exported permission: block IP addresses.
+  // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: bypass node access.
+  // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: cancel account.
+  // Exported permission: 'cancel account'.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(),
     'module' => 'user',
   );
 
-  // Exported permission: change own username.
+  // Exported permission: 'change own username'.
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
@@ -342,7 +347,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: create url aliases.
+  // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
@@ -352,7 +357,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: customize shortcut links.
+  // Exported permission: 'customize shortcut links'.
   $permissions['customize shortcut links'] = array(
     'name' => 'customize shortcut links',
     'roles' => array(
@@ -361,7 +366,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: delete revisions.
+  // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
@@ -371,7 +376,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: download original image.
+  // Exported permission: 'download original image'.
   $permissions['download original image'] = array(
     'name' => 'download original image',
     'roles' => array(
@@ -382,7 +387,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'lightbox2',
   );
 
-  // Exported permission: export nodes.
+  // Exported permission: 'export nodes'.
   $permissions['export nodes'] = array(
     'name' => 'export nodes',
     'roles' => array(
@@ -392,7 +397,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node_export',
   );
 
-  // Exported permission: export own nodes.
+  // Exported permission: 'export own nodes'.
   $permissions['export own nodes'] = array(
     'name' => 'export own nodes',
     'roles' => array(
@@ -403,7 +408,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node_export',
   );
 
-  // Exported permission: import media.
+  // Exported permission: 'import media'.
   $permissions['import media'] = array(
     'name' => 'import media',
     'roles' => array(
@@ -412,7 +417,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'media',
   );
 
-  // Exported permission: manage features.
+  // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
@@ -421,14 +426,14 @@ function asc_auth_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: notify of path changes.
+  // Exported permission: 'notify of path changes'.
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
     'roles' => array(),
     'module' => 'pathauto',
   );
 
-  // Exported permission: revert revisions.
+  // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
@@ -438,7 +443,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: search content.
+  // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
@@ -448,21 +453,21 @@ function asc_auth_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: select account cancellation method.
+  // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(),
     'module' => 'user',
   );
 
-  // Exported permission: skip CAPTCHA.
+  // Exported permission: 'skip CAPTCHA'.
   $permissions['skip CAPTCHA'] = array(
     'name' => 'skip CAPTCHA',
     'roles' => array(),
     'module' => 'captcha',
   );
 
-  // Exported permission: submit latitude/longitude.
+  // Exported permission: 'submit latitude/longitude'.
   $permissions['submit latitude/longitude'] = array(
     'name' => 'submit latitude/longitude',
     'roles' => array(
@@ -471,7 +476,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'location',
   );
 
-  // Exported permission: switch shortcut sets.
+  // Exported permission: 'switch shortcut sets'.
   $permissions['switch shortcut sets'] = array(
     'name' => 'switch shortcut sets',
     'roles' => array(
@@ -480,14 +485,16 @@ function asc_auth_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: use PHP to import nodes.
+  // Exported permission: 'use PHP to import nodes'.
   $permissions['use PHP to import nodes'] = array(
     'name' => 'use PHP to import nodes',
-    'roles' => array(),
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+    ),
     'module' => 'node_export',
   );
 
-  // Exported permission: use admin toolbar.
+  // Exported permission: 'use admin toolbar'.
   $permissions['use admin toolbar'] = array(
     'name' => 'use admin toolbar',
     'roles' => array(
@@ -498,7 +505,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'admin',
   );
 
-  // Exported permission: use advanced search.
+  // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
     'roles' => array(
@@ -508,7 +515,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: view location directory.
+  // Exported permission: 'view location directory'.
   $permissions['view location directory'] = array(
     'name' => 'view location directory',
     'roles' => array(
@@ -517,7 +524,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'location',
   );
 
-  // Exported permission: view node location table.
+  // Exported permission: 'view node location table'.
   $permissions['view node location table'] = array(
     'name' => 'view node location table',
     'roles' => array(
@@ -526,7 +533,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'location',
   );
 
-  // Exported permission: view own unpublished content.
+  // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
@@ -537,7 +544,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view revisions.
+  // Exported permission: 'view revisions'.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
@@ -548,7 +555,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view the administration theme.
+  // Exported permission: 'view the administration theme'.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
@@ -559,7 +566,7 @@ function asc_auth_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: view user location table.
+  // Exported permission: 'view user location table'.
   $permissions['view user location table'] = array(
     'name' => 'view user location table',
     'roles' => array(
